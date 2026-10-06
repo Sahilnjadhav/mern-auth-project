@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d7e0ec;
+}
+
+/* Register Page */
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+/* Register Card */
+.auth-card {
+  width: 400px;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Form */
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+  background-color: white;
+}
+
+/* Input Focus */
+.auth-card input:focus {
+  border-color: #4f46e5;
+}
+
+/* Placeholder */
+.auth-card input::placeholder {
+  color: #777;
+}
+
+/* Error Message */
+.error {
+  margin-top: 2px;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Register Button */
+.auth-card button {
+  width: 100%;
+  height: 48px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Button Hover */
+.auth-card button:hover {
+  background-color: #4338ca;
+}
+
+/* Login Text */
+.switch-text {
+  margin-top: 25px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Login Link */
+.switch-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .page {
+    padding: 15px;
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 30px 25px;
+  }
+
+  .auth-card h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0; box-sizing: border-box; }
+
+.navbar {
+    background-color: #4e4d4d;
+    padding: 15px 30px;
+}
+
+/* Center menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Links style */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    transition: 0.3s;
+}
